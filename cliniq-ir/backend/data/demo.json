@@ -1,0 +1,494 @@
+{
+  "notice": "Fictional development-only dataset. No real patient information. Educational retrieval demonstration; not clinical guidance.",
+  "demo_password": "DemoClinic!2026",
+  "clinics": [
+    {
+      "id": "north",
+      "name": "Northstar Family Clinic"
+    },
+    {
+      "id": "river",
+      "name": "Riverside Medical Centre"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "clinic_id": "north",
+      "email": "doctor@cliniq.demo",
+      "name": "Dr. Leena Farooq",
+      "role": "doctor"
+    },
+    {
+      "id": 2,
+      "clinic_id": "river",
+      "email": "doctor@river.demo",
+      "name": "Dr. Faraz Aslam",
+      "role": "doctor"
+    },
+    {
+      "id": 3,
+      "clinic_id": "north",
+      "email": "staff@cliniq.demo",
+      "name": "Demo Receptionist",
+      "role": "receptionist"
+    }
+  ],
+  "categories": [
+    {
+      "id": "history",
+      "name": "Patient History",
+      "description": "Medical background, medications, and allergies.",
+      "position": 0
+    },
+    {
+      "id": "intake",
+      "name": "Intake Summaries",
+      "description": "Structured information collected before consultation.",
+      "position": 1
+    },
+    {
+      "id": "consultation",
+      "name": "Consultation Notes",
+      "description": "Clinician-authored notes from patient encounters.",
+      "position": 2
+    },
+    {
+      "id": "observations",
+      "name": "Symptoms & Observations",
+      "description": "Documented symptoms, observations, and vital signs.",
+      "position": 3
+    },
+    {
+      "id": "investigations",
+      "name": "Investigations & Labs",
+      "description": "Fictional investigation records and lab summaries.",
+      "position": 4
+    },
+    {
+      "id": "other",
+      "name": "Other Clinical Documents",
+      "description": "Additional documents associated with an encounter.",
+      "position": 5
+    }
+  ],
+  "patients": [
+    {
+      "id": "P-1001",
+      "clinic_id": "north",
+      "name": "Amina Rahman",
+      "birth_year": 1992,
+      "sex": "Female"
+    },
+    {
+      "id": "P-1002",
+      "clinic_id": "north",
+      "name": "Bilal Ahmed",
+      "birth_year": 1985,
+      "sex": "Male"
+    },
+    {
+      "id": "P-1003",
+      "clinic_id": "north",
+      "name": "Sara Khan",
+      "birth_year": 1998,
+      "sex": "Female"
+    },
+    {
+      "id": "P-1004",
+      "clinic_id": "north",
+      "name": "Omar Siddiqui",
+      "birth_year": 1976,
+      "sex": "Male"
+    },
+    {
+      "id": "P-1005",
+      "clinic_id": "north",
+      "name": "Noor Fatima",
+      "birth_year": 2001,
+      "sex": "Female"
+    },
+    {
+      "id": "P-1006",
+      "clinic_id": "north",
+      "name": "Hassan Ali",
+      "birth_year": 1968,
+      "sex": "Male"
+    },
+    {
+      "id": "P-1007",
+      "clinic_id": "north",
+      "name": "Zara Malik",
+      "birth_year": 1995,
+      "sex": "Female"
+    },
+    {
+      "id": "P-2001",
+      "clinic_id": "river",
+      "name": "Daniyal Shah",
+      "birth_year": 1989,
+      "sex": "Male"
+    },
+    {
+      "id": "P-2002",
+      "clinic_id": "river",
+      "name": "Maya Aziz",
+      "birth_year": 1993,
+      "sex": "Female"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "E-1001",
+      "patient_id": "P-1001",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-15T09:30:00",
+      "reason": "Recurring headache",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1002",
+      "patient_id": "P-1001",
+      "clinic_id": "north",
+      "occurred_at": "2026-09-20T11:00:00",
+      "reason": "Routine follow-up",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1003",
+      "patient_id": "P-1002",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-16T10:15:00",
+      "reason": "Cough and sore throat",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1004",
+      "patient_id": "P-1002",
+      "clinic_id": "north",
+      "occurred_at": "2026-08-18T08:45:00",
+      "reason": "Annual review",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1005",
+      "patient_id": "P-1003",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-17T14:00:00",
+      "reason": "Fatigue review",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1006",
+      "patient_id": "P-1004",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-18T09:00:00",
+      "reason": "Blood pressure follow-up",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1007",
+      "patient_id": "P-1005",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-18T11:30:00",
+      "reason": "Seasonal allergy review",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Completed"
+    },
+    {
+      "id": "E-1008",
+      "patient_id": "P-1006",
+      "clinic_id": "north",
+      "occurred_at": "2026-10-19T10:00:00",
+      "reason": "Scheduled review",
+      "clinician": "Dr. Leena Farooq",
+      "status": "Scheduled"
+    },
+    {
+      "id": "E-2001",
+      "patient_id": "P-2001",
+      "clinic_id": "river",
+      "occurred_at": "2026-10-16T09:00:00",
+      "reason": "Restricted clinic follow-up",
+      "clinician": "Dr. Faraz Aslam",
+      "status": "Completed"
+    },
+    {
+      "id": "E-2002",
+      "patient_id": "P-2002",
+      "clinic_id": "river",
+      "occurred_at": "2026-10-17T15:00:00",
+      "reason": "Routine intake",
+      "clinician": "Dr. Faraz Aslam",
+      "status": "Completed"
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1001",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Medical history — Amina Rahman",
+      "created_at": "2026-10-15T09:30:00",
+      "content": "Presenting concern\nRecurring headache over the past two weeks, reported during a fictional intake session.\n\nMedical background\nNo previous chronic conditions documented in this sample record.\n\nMedications and allergies\nNo regular medication reported. No known drug allergies recorded.\n\nFamily and social history\nOffice-based work. A family history of migraine was reported. All details are fictional."
+    },
+    {
+      "id": 2,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1001",
+      "clinic_id": "north",
+      "category_id": "intake",
+      "title": "Headache — pre-consultation intake",
+      "created_at": "2026-10-15T09:30:00",
+      "content": "Patient-reported symptoms\nIntermittent frontal headache, mostly after long periods at a computer.\n\nDuration and context\nTwo weeks. Patient reports irregular sleep and skipped meals.\n\nQuestions for clinician\nReview symptom pattern and complete the consultation. This sample provides recorded history, not diagnostic advice."
+    },
+    {
+      "id": 3,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1001",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Headache consultation note",
+      "created_at": "2026-10-15T09:30:00",
+      "content": "Encounter overview\nFictional consultation for recurring headache. The clinician reviewed the intake history and discussed the reported symptom pattern.\n\nDocumented discussion\nScreen time, sleep routine, and symptom timing were reviewed.\n\nRecorded plan\nFollow-up was documented for this teaching example. No diagnosis or treatment recommendation is generated by the explorer."
+    },
+    {
+      "id": 4,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1001",
+      "clinic_id": "north",
+      "category_id": "observations",
+      "title": "Headache — symptoms and observations",
+      "created_at": "2026-10-15T09:30:00",
+      "content": "Reported symptoms\nIntermittent headache. No other symptoms were recorded in this sample.\n\nRecorded observations\nBlood pressure: 118/76 mmHg. Pulse: 74 bpm. Temperature: 36.7 C.\n\nSource\nFictional observations entered for an educational retrieval exercise."
+    },
+    {
+      "id": 5,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1001",
+      "clinic_id": "north",
+      "category_id": "investigations",
+      "title": "Complete blood count — sample summary",
+      "created_at": "2026-10-15T09:30:00",
+      "content": "Investigation\nComplete blood count, fictional teaching result.\n\nRecorded values\nHaemoglobin: 12.8 g/dL. White cell count: 6.5 x10^9/L. Platelets: 245 x10^9/L.\n\nReport note\nThese invented values demonstrate document retrieval only. No automated interpretation is provided."
+    },
+    {
+      "id": 6,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1002",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Background history — prior visit",
+      "created_at": "2026-09-20T11:00:00",
+      "content": "Visit context\nEarlier fictional visit for a routine review.\n\nRecorded background\nNo regular medications were documented. General wellbeing and daily routine were discussed."
+    },
+    {
+      "id": 7,
+      "patient_id": "P-1001",
+      "encounter_id": "E-1002",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Routine follow-up consultation",
+      "created_at": "2026-09-20T11:00:00",
+      "content": "Reason for visit\nRoutine follow-up.\n\nConsultation note\nThe fictional patient reported no new concern at this encounter. Past history was reviewed and updated.\n\nRecord status\nCompleted sample note."
+    },
+    {
+      "id": 8,
+      "patient_id": "P-1002",
+      "encounter_id": "E-1003",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Respiratory history — Bilal Ahmed",
+      "created_at": "2026-10-16T10:15:00",
+      "content": "Presenting concern\nCough and sore throat reported for three days.\n\nMedical background\nNo chronic respiratory condition documented in this fictional history.\n\nAllergies\nNo known medication allergies recorded."
+    },
+    {
+      "id": 9,
+      "patient_id": "P-1002",
+      "encounter_id": "E-1003",
+      "clinic_id": "north",
+      "category_id": "intake",
+      "title": "Cough and sore throat — intake",
+      "created_at": "2026-10-16T10:15:00",
+      "content": "Patient-reported symptoms\nDry cough, sore throat, and mild tiredness.\n\nDuration\nThree days before the sample encounter.\n\nIntake status\nHistory prepared for clinician review. All data are fictional."
+    },
+    {
+      "id": 10,
+      "patient_id": "P-1002",
+      "encounter_id": "E-1003",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Respiratory consultation note",
+      "created_at": "2026-10-16T10:15:00",
+      "content": "Encounter overview\nClinician reviewed reported cough and sore throat in a fictional consultation.\n\nDocumented discussion\nSymptom duration and relevant background were discussed.\n\nRecorded follow-up\nA routine review was noted in the sample record."
+    },
+    {
+      "id": 11,
+      "patient_id": "P-1002",
+      "encounter_id": "E-1003",
+      "clinic_id": "north",
+      "category_id": "observations",
+      "title": "Respiratory symptoms and vital signs",
+      "created_at": "2026-10-16T10:15:00",
+      "content": "Symptoms\nDry cough and sore throat.\n\nRecorded observations\nTemperature: 37.2 C. Pulse: 80 bpm. Oxygen saturation: 98%.\n\nSource\nFictional encounter observations, supplied for the assignment."
+    },
+    {
+      "id": 12,
+      "patient_id": "P-1002",
+      "encounter_id": "E-1004",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Annual review — consultation summary",
+      "created_at": "2026-08-18T08:45:00",
+      "content": "Visit purpose\nAnnual review in the fictional dataset.\n\nRecorded discussion\nDaily activities, previous history, and general wellbeing were reviewed.\n\nRecord status\nCompleted."
+    },
+    {
+      "id": 13,
+      "patient_id": "P-1003",
+      "encounter_id": "E-1005",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Medical history — Sara Khan",
+      "created_at": "2026-10-17T14:00:00",
+      "content": "Presenting concern\nTiredness reported over the past month.\n\nBackground\nBusy study schedule and irregular meals reported in the fictional history.\n\nMedication history\nNo current regular medications documented."
+    },
+    {
+      "id": 14,
+      "patient_id": "P-1003",
+      "encounter_id": "E-1005",
+      "clinic_id": "north",
+      "category_id": "intake",
+      "title": "Fatigue — structured intake summary",
+      "created_at": "2026-10-17T14:00:00",
+      "content": "Symptoms and duration\nFatigue for approximately one month.\n\nPatient context\nThe fictional patient described reduced sleep during examinations.\n\nIntake status\nPrepared for clinician review."
+    },
+    {
+      "id": 15,
+      "patient_id": "P-1003",
+      "encounter_id": "E-1005",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Fatigue review — clinician note",
+      "created_at": "2026-10-17T14:00:00",
+      "content": "Reason for visit\nReview of reported fatigue.\n\nConsultation\nThe clinician reviewed the sample history and available observations.\n\nRecorded plan\nAn investigation summary was linked to this encounter for teaching purposes."
+    },
+    {
+      "id": 16,
+      "patient_id": "P-1003",
+      "encounter_id": "E-1005",
+      "clinic_id": "north",
+      "category_id": "investigations",
+      "title": "Full blood count — fatigue review",
+      "created_at": "2026-10-17T14:00:00",
+      "content": "Investigation\nFictional full blood count.\n\nSample values\nHaemoglobin: 11.9 g/dL. White cell count: 7.1 x10^9/L. Platelets: 260 x10^9/L.\n\nReport note\nInvented values for demonstrating a searchable clinical document. No interpretation is generated."
+    },
+    {
+      "id": 17,
+      "patient_id": "P-1004",
+      "encounter_id": "E-1006",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Medical history — Omar Siddiqui",
+      "created_at": "2026-10-18T09:00:00",
+      "content": "Background\nA previous history of elevated blood pressure is documented in this fictional record.\n\nMedication history\nMedication review recorded as completed by the sample clinician.\n\nAllergy history\nNo allergies recorded in the sample."
+    },
+    {
+      "id": 18,
+      "patient_id": "P-1004",
+      "encounter_id": "E-1006",
+      "clinic_id": "north",
+      "category_id": "intake",
+      "title": "Blood pressure follow-up — intake",
+      "created_at": "2026-10-18T09:00:00",
+      "content": "Visit purpose\nFollow-up of previously recorded blood pressure.\n\nPatient report\nNo new concerns documented in this fictional intake.\n\nPreparation\nPrevious encounter information was available for clinician review."
+    },
+    {
+      "id": 19,
+      "patient_id": "P-1004",
+      "encounter_id": "E-1006",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Blood pressure review — consultation note",
+      "created_at": "2026-10-18T09:00:00",
+      "content": "Encounter summary\nThe sample clinician reviewed previous history and current observations.\n\nDiscussion\nDaily routine and the recorded follow-up schedule were reviewed.\n\nRecord status\nCompleted fictional consultation."
+    },
+    {
+      "id": 20,
+      "patient_id": "P-1004",
+      "encounter_id": "E-1006",
+      "clinic_id": "north",
+      "category_id": "observations",
+      "title": "Blood pressure — recorded observations",
+      "created_at": "2026-10-18T09:00:00",
+      "content": "Recorded observations\nBlood pressure: 132/84 mmHg. Pulse: 72 bpm.\n\nRecord context\nThese fictional observations are attached to the follow-up encounter.\n\nSource\nManually entered development sample."
+    },
+    {
+      "id": 21,
+      "patient_id": "P-1005",
+      "encounter_id": "E-1007",
+      "clinic_id": "north",
+      "category_id": "history",
+      "title": "Allergy history — Noor Fatima",
+      "created_at": "2026-10-18T11:30:00",
+      "content": "Presenting concern\nSeasonal sneezing and itchy eyes.\n\nBackground\nSimilar seasonal symptoms reported in previous years in this fictional history.\n\nMedication allergies\nNo medication allergies recorded."
+    },
+    {
+      "id": 22,
+      "patient_id": "P-1005",
+      "encounter_id": "E-1007",
+      "clinic_id": "north",
+      "category_id": "intake",
+      "title": "Seasonal symptoms — intake summary",
+      "created_at": "2026-10-18T11:30:00",
+      "content": "Symptoms\nSneezing, itchy eyes, and a runny nose.\n\nContext\nPatient reports symptoms after outdoor activity.\n\nIntake status\nPrepared for a fictional consultation."
+    },
+    {
+      "id": 23,
+      "patient_id": "P-1005",
+      "encounter_id": "E-1007",
+      "clinic_id": "north",
+      "category_id": "consultation",
+      "title": "Seasonal allergy review — consultation",
+      "created_at": "2026-10-18T11:30:00",
+      "content": "Encounter overview\nThe sample clinician reviewed seasonal symptoms and the patient history.\n\nDocumented discussion\nThe timing and context of symptoms were discussed.\n\nRecord status\nCompleted teaching example."
+    },
+    {
+      "id": 24,
+      "patient_id": "P-2001",
+      "encounter_id": "E-2001",
+      "clinic_id": "river",
+      "category_id": "history",
+      "title": "Riverside confidential background history",
+      "created_at": "2026-10-16T09:00:00",
+      "content": "Restricted clinic sample\nRiverstone-only-marker is a fictional keyword used to test clinic isolation.\n\nPatient background\nThis record belongs only to the Riverside demo clinic."
+    },
+    {
+      "id": 25,
+      "patient_id": "P-2001",
+      "encounter_id": "E-2001",
+      "clinic_id": "river",
+      "category_id": "consultation",
+      "title": "Riverside follow-up consultation",
+      "created_at": "2026-10-16T09:00:00",
+      "content": "Encounter summary\nFictional Riverside follow-up. Riverstone-only-marker must never appear in Northstar search results.\n\nRecorded discussion\nRoutine background review completed."
+    },
+    {
+      "id": 26,
+      "patient_id": "P-2002",
+      "encounter_id": "E-2002",
+      "clinic_id": "river",
+      "category_id": "intake",
+      "title": "Riverside routine intake",
+      "created_at": "2026-10-17T15:00:00",
+      "content": "Visit context\nRoutine fictional intake at Riverside Medical Centre.\n\nPatient report\nNo new concern documented in this sample.\n\nStatus\nPrepared for review."
+    }
+  ]
+}
